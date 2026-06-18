@@ -36,6 +36,11 @@ body {
   margin-bottom: 50px;
 }
 
+.logo-modules {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
 .links{
   margin-bottom: 50px;
 }
@@ -69,6 +74,12 @@ body {
   width: 1170px;
 }
 
+.container-modules {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1170px;
+}
+
 .header-first {
   margin-top: 0;
   margin-bottom: 40px;
@@ -78,12 +89,27 @@ body {
   color: #333;
 }
 
+.header-first-modules {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 60px;
+  color: #3f2aff;
+}
+
 .header-second {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 40px;
   line-height: 46px;
   color: #333;
+}
+
+.header-second-modules {
+  margin: 0 0 2px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #3f2aff;
 }
 
 .header-third {
@@ -105,6 +131,27 @@ body {
   color: #333;
 }
 
+.text-modules {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+.text-list-modules {
+  padding: 0;
+  list-style-type: none;
+}
+
+.module-num {
+  position: absolute;
+  font-weight: 400;
+  font-size: 40px;
+  right: 0;
+  bottom: 0;
+  color: #eaeaea;
+}
+
 .gray-box {
   padding: 30px;
   border-radius: 20px;
@@ -121,6 +168,14 @@ body {
 .gray-box .text {
   width: 692px;
   margin-bottom: 10px;
+}
+
+.show-box {
+  margin: 50px auto;
+  padding: 25px 76px;
+  width: 274px;
+  height: 70px;
+  border: 2px solid #3f2aff;
 }
 
 .content-image {
@@ -146,6 +201,46 @@ body {
   margin-left: 15px;
   padding: 0;
   margin-bottom: 0;
+}
+
+.list-modules {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0;
+}
+
+.ilist-modules {
+  display: inline-block;
+  position: relative;
+  margin-top: 25px;
+  padding: 205px 25px 25px;
+  vertical-align: top;
+  width: 572px;
+  height: 505px;
+  background-color: #fff;
+  background-position: top center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.ilist-modules:not(:nth-child(2n)) {
+  margin-right: 25px;
+}
+
+.item-first {
+  background-image: url(../img/1-modules.jpg);
+}
+
+.item-second {
+  background-image: url(../img/2-modules.jpg);
+}
+
+.item-third {
+  background-image: url(../img/3-modules.jpg);
+}
+
+.item-forth {
+  background-image: url(../img/4-modules.jpg);
 }
 
 ::marker {
