@@ -65,9 +65,10 @@ body {
 }
 
 .btn {
-  padding: 13px 20px;
+  padding: 12px 19px;
   border: 1px solid #c93;
   border-radius: 10px;
+  line-height: 1;
   background-color: transparent;
   color: #c93;
   cursor: pointer;
@@ -254,10 +255,12 @@ body {
 }
 
 .relax {
+  margin-bottom: 0;
   background-image: url('../img/services-relax.jpg');
 }
 
 .parking {
+  margin-bottom: 0;
   background-image: url('../img/services-parking.jpg');
 }
 
@@ -296,22 +299,27 @@ body {
 }
 
 .main-benefits-item:nth-child(4){
+  margin-bottom: 0;
   background-image: url('../img/ben-4.svg');
 }
 
 .main-benefits-item:nth-child(5){
+  margin-bottom: 0;
   background-image: url('../img/ben-5.svg');
 }
 
 .main-benefits-item:nth-child(6){
+  margin-bottom: 0;
   background-image: url('../img/ben-6.svg');
 }
 
 .main-benefits-item:nth-child(7){
+  margin-bottom: 0;
   background-image: url('../img/ben-7.svg');
 }
 
 .main-benefits-item:nth-child(8){
+  margin-bottom: 0;
   background-image: url('../img/ben-8.svg');
 }
 
@@ -337,7 +345,16 @@ body {
   margin-right: 24px;
 }
 
+.main-placement-item.main-benefits-item:nth-child(7) {
+  margin-bottom: 0;
+}
+
+.main-placement-item.main-benefits-item:nth-child(8) {
+  margin-bottom: 0;
+}
+
 .main-placement-item:last-child {
+  margin-bottom: 0;
   padding: 373px 54px 27px;
   background-image: url('../img/placement-variants.jpg');
   background-repeat: no-repeat;
@@ -363,11 +380,17 @@ body {
 }
 
 .main-placement-out-image {
-  padding: 32px 45px 45px;
+  padding: 28px 45px 45px;
+}
+
+.placement-name {
+  margin: 16px 0;
+  line-height: 1;
 }
 
 .main-placement-town {
   margin-bottom: 20px;
+  line-height: 1;
   color: #999;
 }
 
