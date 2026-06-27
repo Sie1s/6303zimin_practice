@@ -118,3 +118,19 @@ body {
 .main-services-item:not(:nth-child(2n)) {
   margin-right: 24px;
 }
+
+/* benefits */
+
+.main-benefits-list {
+  flex-wrap: wrap;
+}
+
+.main-benefits-item {
+  width: 276px;
+  padding: 116px 42px 32px 45px;
+  margin-bottom: 22px; 
+}
+
+.main-benefits-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
