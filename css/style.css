@@ -82,3 +82,23 @@ body {
 .header-tour {
   margin-right: 40px;
 }
+
+/* hero */
+
+.main-offers-list {
+  flex-wrap: wrap;
+}
+
+.main-offers-item {
+  width: 573px;
+  margin-bottom: 24px;
+}
+
+.main-offers-item:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+.offers-header {
+  margin: 0;
+  margin-bottom: 15px;
+}
