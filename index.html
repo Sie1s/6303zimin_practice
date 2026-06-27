@@ -435,14 +435,141 @@
         </ul>
       </div>
     </section>
-    <section class="main-section booking" id="booking">
-      <div class="container">
-        /
+    <section class="main-section" id="booking">
+      <div class="container  booking">
+        <h2 class="main-header">
+          Хочу тур
+        </h2>
+        <div class="booking-tab">
+          <form class="booking-form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            <fieldset class="booking-fieldset">
+              <legend>
+                Город вылета
+              </legend>
+              <select class="booking-select" name="departure-city">
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Москва">Москва</option>
+                <option value="Самара">Самара</option>
+                <option value="Ульяновск">Ульяновск</option>
+              </select>
+            </fieldset>
+            <fieldset class="booking-fieldset">
+              <legend>
+                Страна
+              </legend>
+              <select class="booking-select" name="country">
+                <option value="Австралия">Австралия</option>
+                <option value="Турция">Турция</option>
+                <option value="Испания">Испания</option>
+                <option value="Бразилия">Бразилия</option>
+              </select>
+            </fieldset>
+            <fieldset class="booking-fieldset">
+              <legend>
+                Дата прибытия
+              </legend>
+              <input class="booking-date" type="date" name="arriving-date" required>
+            </fieldset>
+            <fieldset class="booking-fieldset">
+              <legend>
+                Ночей
+              </legend>
+              <input class="booking-num" type="number" name="nights-count" min="3" max="31" placeholder="6" required>
+            </fieldset>
+            <fieldset class="booking-fieldset">
+              <legend>
+                Туристы
+              </legend>
+              <input class="booking-num" type="number" name="tourists-count" min="1" max="6" placeholder="2" required>
+            </fieldset>
+            <button class="btn booking-button" type="submit">
+              Найти
+            </button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="main-section contacts" id="contacts">
       <div class="container">
-        /
+        <h2 class="main-header">
+          Контакты
+        </h2>
+        <div class="contacts-box flex">
+          <div class="contacts-pull flex">
+            <ul class="contacts-list list-reset">
+              <li class="contacts-item flex">
+                <div class="contacts-header-wrapper">
+                  <h3 class="contacts-header">
+                    Адрес
+                  </h3>
+                </div>
+                <div class="contacts-info-wrapper">
+                  <p class="main-text contacts-info-text">
+                    Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+                  </p>
+                </div>
+              </li>
+              <li class="contacts-item flex">
+                <div class="contacts-header-wrapper">
+                  <h3 class="contacts-header">
+                    Телефоны
+                  </h3>
+                </div>
+                <div class="contacts-info-wrapper">
+                  <p class="main-text contacts-info-text">
+                    <a href="tel:+74995356434" class="contacts-link contacts-info-text">
+                      +7&nbsp;499 535-64-34
+                    </a>
+                  </p>
+                  <p class="main-text contacts-info-text">
+                    <a href="tel:+74950050544" class="contacts-link contacts-info-text">
+                      +7&nbsp;495 005-05-44
+                    </a>
+                  </p>
+                </div>
+              </li>
+              <li class="contacts-item flex">
+                <div class="contacts-header-wrapper">
+                  <h3 class="contacts-header">
+                    Email
+                  </h3>
+                </div>
+                <div class="contacts-info-wrapper">
+                  <a class="contacts-link contacts-info-text" href="mailto:lg.oona@mail.ru">
+                    lg.oona@mail.ru
+                  </a>
+                  <p class="main-text contacts-info-text contacts-email-spec">
+                    по&nbsp;вопросам бронирования
+                  </p>
+                  <a class="contacts-link contacts-info-text" href="mailto:hotels.ln@mail.ru">
+                    hotels.ln@mail.ru
+                  </a>
+                  <p class="main-text contacts-info-text contacts-email-spec">
+                    по&nbsp;вопросам сотрудничества
+                  </p>
+                </div>
+              </li>
+              <li class="contacts-item flex">
+                <div class="contacts-header-wrapper">
+                  <h3 class="contacts-header">
+                    График
+                  </h3>
+                </div>
+                <div class="contacts-info-wrapper">
+                  <p class="main-text contacts-info-text">
+                    Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="btn contacts-button">
+              Построить маршрут
+            </button>
+          </div>
+          <div class="contacts-image">
+            <img src="/img/contacts-back.jpg" alt="Фотография рецепшена">
+          </div>
+        </div>
       </div>
     </section>
   </main>

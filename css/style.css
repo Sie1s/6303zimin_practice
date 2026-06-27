@@ -54,9 +54,10 @@ body {
   min-width: 1200px;
   font-family: "Muller", sans-serif;
   font-weight: 400;
+  font-size: 16px;
   /* temp */
-  background-color: #F1F1F1;
-  /* background-color: red; */
+  /* background-color: #F1F1F1; */
+  background-color: red;
 }
 
 .list-reset {
@@ -403,4 +404,119 @@ body {
   background-position: right center;
   background-repeat: no-repeat;
   color: #fff;
+}
+
+/* booking */
+
+.booking {
+  padding: 45px 0;
+  border-radius: 15px;
+  background-color: #E9E9E9;
+  color: #000;
+}
+
+.booking-tab {
+  margin: 0 45px;
+  padding: 30px 28px 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.booking-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.booking-select {
+  margin-top: 15px;
+  margin-right: 41px;
+  width: 169px;
+  border: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.booking-date {
+  margin-top: 15px;
+  margin-right: 41px;
+  width: 121px;
+  border: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.booking-num {
+  margin-top: 15px;
+  margin-right: 41px;
+  width: 121px;
+  border: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.booking-button {
+  margin-left: auto;
+}
+
+/* contacts */
+
+.contacts-box {
+  padding: 45px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.contacts-pull {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts-list {
+  flex-direction: column;
+  flex: 1;
+  padding-right: 52px;
+}
+
+.contacts-item {
+  flex-direction: row;
+  width: 375px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.contacts-header {
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contacts-info-wrapper {
+  margin-left: auto;
+  width: 229px;
+}
+
+.contacts-info-text {
+  line-height: 1.5;
+}
+
+.contacts-link {
+  color: #c93;
+}
+
+.contacts-email-spec {
+  color: #999;
+}
+
+.contacts-button {
+  margin-top: auto;
+  padding: 27px 30px;
 }
