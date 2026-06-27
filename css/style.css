@@ -218,6 +218,12 @@ body {
   color: #c93;
 }
 
+/* info */
+
+.info .main-text {
+  max-width: 888px;
+}
+
 /* services */
 
 .main-services-list {
