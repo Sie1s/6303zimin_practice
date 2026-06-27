@@ -56,6 +56,7 @@ body {
   font-weight: 400;
   /* temp */
   background-color: #F1F1F1;
+  /* background-color: red; */
 }
 
 .list-reset {
@@ -299,7 +300,6 @@ body {
 }
 
 .main-benefits-item:nth-child(4){
-  margin-bottom: 0;
   background-image: url('../img/ben-4.svg');
 }
 
@@ -345,11 +345,11 @@ body {
   margin-right: 24px;
 }
 
-.main-placement-item.main-benefits-item:nth-child(7) {
+.main-placement-item:nth-child(7) {
   margin-bottom: 0;
 }
 
-.main-placement-item.main-benefits-item:nth-child(8) {
+.main-placement-item:nth-child(8) {
   margin-bottom: 0;
 }
 
@@ -398,6 +398,7 @@ body {
   padding-right: 16px;
   font-weight: 500;
   font-size: 20px;
+  line-height: 2;
   background-image: url('../img/link-pointer-white.svg');
   background-position: right center;
   background-repeat: no-repeat;
