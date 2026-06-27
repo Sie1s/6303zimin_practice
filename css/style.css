@@ -134,3 +134,36 @@ body {
 .main-benefits-item:not(:nth-child(4n)) {
   margin-right: 22px;
 }
+
+/* placement */
+
+.main-placement-list {
+  flex-wrap: wrap;
+}
+
+.main-placement-item {
+  width: 374px;
+  margin-bottom: 24px;
+}
+
+.main-placement-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+.placement-cost-start {
+  margin-top: 4px;
+  margin-right: 4px;
+}
+
+.placement-cost-end {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.main-placement-stars {
+  margin-left: auto;
+}
+
+.main-placement-out-image {
+  padding: 32px 45px 45px;
+}
