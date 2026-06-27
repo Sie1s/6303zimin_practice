@@ -102,3 +102,19 @@ body {
   margin: 0;
   margin-bottom: 15px;
 }
+
+/* services */
+
+.main-services-list {
+  flex-wrap: wrap;
+}
+
+.main-services-item {
+  width: 573px;
+  padding: 26px 126px 35px 45px;
+  margin-bottom: 24px;
+}
+
+.main-services-item:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
