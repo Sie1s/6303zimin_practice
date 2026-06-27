@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  line-height: 1;
 }
 
 *,
@@ -86,10 +87,14 @@ body {
   margin: 0;
   margin-bottom: 20px;
   margin-left: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #333;
 }
 
 .main-text {
   margin: 0;
+  line-height: 2;
 }
 
 .main-section{
@@ -151,21 +156,66 @@ body {
 /* hero */
 
 .main-offers-list {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 573px);
+  gap: 24px;
 }
 
 .main-offers-item {
-  width: 573px;
-  margin-bottom: 24px;
+  width: auto;
+  margin: 0;
+  padding: 40px 108px 40px 45px;
+  min-height: 258px;
 }
 
-.main-offers-item:not(:nth-child(2n)) {
-  margin-right: 24px;
+.main-offers-item:first-child {
+  background-image: url(../img/Maldives.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-offers-item:last-child {
+  background-image: url(../img/Crete.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-offers-item:nth-last-child(2):nth-child(even) {
+  grid-row: span 2;
+  background-image: url(../img/lux.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-offers-item:nth-last-child(2):nth-child(even) .offers-header {
+  font-size: 60px;
+}
+
+.main-offers-item:nth-last-child(2):nth-child(even) .offers-cost {
+  font-size: 30px;
 }
 
 .offers-header {
   margin: 0;
   margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+}
+
+.offers-cost {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.offers-link {
+  margin-top: 47px;
+}
+
+.card-link {
+  padding-right: 11px;
+  background-image: url(../img/link-pointer.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  color: #c93;
 }
 
 /* services */
