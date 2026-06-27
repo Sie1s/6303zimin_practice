@@ -17,15 +17,59 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Muller";
+  src: local('Muller-Light'), url('../fonts/MullerLight.woff2') format("woff2"), url('../fonts/MullerLight.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local('Muller-Regular'), url('../fonts/MullerRegular.woff2') format("woff2"), url('../fonts/MullerRegular.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local('Muller-Regular'), url('../fonts/MullerMedium.woff2') format("woff2"), url('../fonts/MullerMedium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local('Muller-Regular'), url('../fonts/MullerBold.woff2') format("woff2"), url('../fonts/MullerBold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  /* temp */
+  background-color: #F1F1F1;
 }
 
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.btn {
+  padding: 13px 20px;
+  border: 1px solid #c93;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #c93;
+  cursor: pointer;
 }
 
 .flex {
@@ -59,24 +103,41 @@ body {
 }
 
 .header-top {
+  height: 54px;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .header-logo {
+  height: inherit;
   margin-right: 40px;
+}
+
+.header-tel {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
 }
 
 .header-profile {
   margin-left: auto;
+  padding: 5px 0 3px 29px;
+  background-image: url(../img/profile-icon.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  color: #c93;
 }
 
 .header-bottom {
   padding: 14px 45px;
   align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .header-nav {
   margin-right: auto;
+  color: #666;
 }
 
 .header-list-item:not(:last-child) {
