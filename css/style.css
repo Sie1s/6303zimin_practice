@@ -276,7 +276,43 @@ body {
 .main-benefits-item {
   width: 276px;
   padding: 116px 42px 32px 45px;
-  margin-bottom: 22px; 
+  margin-bottom: 22px;
+  border-radius: 15px;
+  background-color: #fff;
+  background-position: 45px 40px;
+  background-repeat: no-repeat;
+}
+
+.main-benefits-item:nth-child(1){
+  background-image: url('../img/ben-1.svg');
+}
+
+.main-benefits-item:nth-child(2){
+  background-image: url('../img/ben-2.svg');
+}
+
+.main-benefits-item:nth-child(3){
+  background-image: url('../img/ben-3.svg');
+}
+
+.main-benefits-item:nth-child(4){
+  background-image: url('../img/ben-4.svg');
+}
+
+.main-benefits-item:nth-child(5){
+  background-image: url('../img/ben-5.svg');
+}
+
+.main-benefits-item:nth-child(6){
+  background-image: url('../img/ben-6.svg');
+}
+
+.main-benefits-item:nth-child(7){
+  background-image: url('../img/ben-7.svg');
+}
+
+.main-benefits-item:nth-child(8){
+  background-image: url('../img/ben-8.svg');
 }
 
 .main-benefits-item:not(:nth-child(4n)) {
