@@ -162,6 +162,8 @@ body {
 }
 
 .main-offers-item {
+  flex-direction: column;
+  justify-content: flex-end;
   width: auto;
   margin: 0;
   padding: 40px 108px 40px 45px;
