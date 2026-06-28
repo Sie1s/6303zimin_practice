@@ -436,56 +436,58 @@
       </div>
     </section>
     <section class="main-section" id="booking">
-      <div class="container  booking">
-        <h2 class="main-header">
-          Хочу тур
-        </h2>
-        <div class="booking-tab">
-          <form class="booking-form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <fieldset class="booking-fieldset">
-              <legend>
-                Город вылета
-              </legend>
-              <select class="booking-select" name="departure-city">
-                <option value="Санкт-Петербург">Санкт-Петербург</option>
-                <option value="Москва">Москва</option>
-                <option value="Самара">Самара</option>
-                <option value="Ульяновск">Ульяновск</option>
-              </select>
-            </fieldset>
-            <fieldset class="booking-fieldset">
-              <legend>
-                Страна
-              </legend>
-              <select class="booking-select" name="country">
-                <option value="Австралия">Австралия</option>
-                <option value="Турция">Турция</option>
-                <option value="Испания">Испания</option>
-                <option value="Бразилия">Бразилия</option>
-              </select>
-            </fieldset>
-            <fieldset class="booking-fieldset">
-              <legend>
-                Дата прибытия
-              </legend>
-              <input class="booking-date" type="date" name="arriving-date" required>
-            </fieldset>
-            <fieldset class="booking-fieldset">
-              <legend>
-                Ночей
-              </legend>
-              <input class="booking-num" type="number" name="nights-count" min="3" max="31" placeholder="6" required>
-            </fieldset>
-            <fieldset class="booking-fieldset">
-              <legend>
-                Туристы
-              </legend>
-              <input class="booking-num" type="number" name="tourists-count" min="1" max="6" placeholder="2" required>
-            </fieldset>
-            <button class="btn booking-button" type="submit">
-              Найти
-            </button>
-          </form>
+      <div class="container">
+        <div class="booking">
+          <h2 class="main-header">
+            Хочу тур
+          </h2>
+          <div class="booking-tab">
+            <form class="booking-form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+              <fieldset class="booking-fieldset">
+                <legend>
+                  Город вылета
+                </legend>
+                <select class="booking-select" name="departure-city">
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Самара">Самара</option>
+                  <option value="Ульяновск">Ульяновск</option>
+                </select>
+              </fieldset>
+              <fieldset class="booking-fieldset">
+                <legend>
+                  Страна
+                </legend>
+                <select class="booking-select" name="country">
+                  <option value="Австралия">Австралия</option>
+                  <option value="Турция">Турция</option>
+                  <option value="Испания">Испания</option>
+                  <option value="Бразилия">Бразилия</option>
+                </select>
+              </fieldset>
+              <fieldset class="booking-fieldset">
+                <legend>
+                  Дата прибытия
+                </legend>
+                <input class="booking-date" type="date" name="arriving-date" required>
+              </fieldset>
+              <fieldset class="booking-fieldset">
+                <legend>
+                  Ночей
+                </legend>
+                <input class="booking-num" type="number" name="nights-count" min="3" max="31" placeholder="6" required>
+              </fieldset>
+              <fieldset class="booking-fieldset">
+                <legend>
+                  Туристы
+                </legend>
+                <input class="booking-num" type="number" name="tourists-count" min="1" max="6" placeholder="2" required>
+              </fieldset>
+              <button class="btn booking-button" type="submit">
+                Найти
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -575,7 +577,71 @@
   </main>
   <footer class="footer">
     <div class="container">
-      /
+      <div class="footer-box flex">
+        <div class="footer-info flex">
+          <p class="main-text footer-info-block footer-text">
+            &copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой сети &laquo;Лагуна Хотелс&raquo;
+          </p>
+          <p class="main-text footer-info-block footer-text">
+            Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
+          </p>
+          <a class="contacts-link contacts-info-text" href="#">
+            Пользовательское соглашение
+          </a>
+        </div>
+        <div class="footer-contacts">
+          <ul class="footer-contacts-lsst list-reset">
+            <li class="footer-contacts-item">
+              <span class="footer-text">
+                11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+              </span>
+            </li>
+            <li class="footer-contacts-item">
+              <p class="main-text contacts-info-text">
+                <a href="tel:+74995356434" class="contacts-link contacts-info-text">
+                  +7&nbsp;499 535-64-34
+                </a>
+              </p>
+              <p class="main-text contacts-info-text">
+                <a href="tel:+74950050544" class="contacts-link contacts-info-text">
+                  +7&nbsp;495 005-05-44
+                </a>
+              </p>
+            </li>
+            <li class="footer-contacts-item">
+              <p class="main-text contacts-info-text">
+                <a class="contacts-link contacts-info-text" href="mailto:lg.oona@mail.ru">
+                  lg.oona@mail.ru
+                </a>
+              </p>
+              <p class="main-text contacts-info-text">
+                <a class="contacts-link contacts-info-text" href="mailto:hotels.ln@mail.ru">
+                  hotels.ln@mail.ru
+                </a>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="footer-links-list list-reset">
+            <li class="footer-links-item">
+              <a class="footer-icon-links" href="#">
+                <img class="footer-link-logo" src="/img/Tripadvisor.svg" alt="Tripadvisor">
+              </a>  
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-icon-links" href="#">
+                <img class="footer-link-logo" src="/img/ok.svg" alt="Одноклассники">
+              </a>  
+            </li>
+            <li class="footer-links-item">
+              <a class="footer-icon-links" href="#">
+                <img class="footer-link-logo" src="/img/vk.svg" alt="ВКнотакте">
+              </a>  
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
